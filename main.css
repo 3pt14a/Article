@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: Poppins;
+    font-weight: 450;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: white;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.236);
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+}
+
+.headerleft img {
+    width: 65px;
+    margin: 2px 25px 0 15px;
+}
+
+.searchbar {
+    padding: 5px 5px 5px 15px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    font-size: 25px;  
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* LEFT */
+.leftside {
+    width: 15%;
+    background-color: white;
+    padding: 15px 30px 15px 15px;
+    border-right: 1.5px solid rgba(128, 128, 128, 0.262);
+}
+
+.leftside nav ul li {
+    padding: 10px 0;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    list-style: none;
+}
+
+.leftside nav ul li:hover {
+    color: #ff6600;
+}
+
+
+/* MAIN */
+.maincontent {
+    width: 50%;
+}
+
+.article {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin: 1px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.262);
+}
+
+.article-image {
+    width: 150px;  /* Set the width of the image */
+    height: 100px;  /* Maintain aspect ratio */
+    margin: auto;  /* Space between image and text */
+}
+
+.articlecontent {
+    flex: 1;  /* Allow the text section to take up the remaining space */
+    margin-left: 20px;
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article h2:hover {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+.article p {
+    font-size: 13px;
+}
+
+.article-meta {
+    display: flex;
+    font-size: 12px;
+    color: #777;
+}
+.article-meta span {
+    margin: 10px;
+    margin-left: 0;
+
+}
+
+/* RIGHT */
+.rightside {
+    width: 25%;
+    margin: 50px;
+    padding-left: 35px;
+    border-left: 1.5px solid rgba(128, 128, 128, 0.262);
+
+}
+
+.rightside h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.rightside ul {                 /* Featured Events */
+    list-style: none;
+    padding-left: 0;
+}
+
+.rightside ul li {
+    margin-bottom: 10px;
+    width: fit-content ;
+
+}
+
+.rightside ul li:hover {
+    color: #ff6600;
+    cursor: pointer;
+} 
+
+a {                              /* Links */
+    text-decoration: none;
+}
+
+.rightside a p {                   
+    margin-top: 18px;
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.rightside a p:hover {
+    text-decoration: underline;
+}
+
+.tags span {                            /* Popular Department */
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.rightside span:hover {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+.whotofollow p {        /* To Follow */
+    padding: 5px;
+    width: fit-content ;
+}
+
+.whotofollow p:hover {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+.more button {
+    border: none;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.574);
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.more button:hover {
+    cursor: pointer;
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+
+/* MODALS */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.658); /* Black w/ opacity */
+}
+
+.modalcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.355);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.modalcontent h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.modalcontent p {
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .leftside,
+    .rightside {
+        width: 100%;
+        border: none; /* Remove borders for smaller screens */
+    }
+
+    .leftside nav ul {
+        display: flex;
+        text-align: center;
+    }
+
+    .leftside nav ul li {
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .maincontent {
+        width: 100%;
+    }
+
+    .rightside {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .headerleft img {
+        margin: 5px 15px 0 5px;
+        width: 60px; /* Smaller logo on smaller screens */
+    }
+
+    .searchbar {
+        width: 100%; /* Full width search bar */
+    }
+
+    .modalcontent {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start;
+    }
+
+    .headerleft {
+        margin-bottom: 0; /* Space between logo and profile icon */
+    }
+
+    .leftside nav ul li {
+        font-size: 12px;
+    }
+
+    .searchbar {
+        font-size: 14px; /* Smaller search bar text */
+    }
+
+    .article-image {
+        width: 150px; /* Smaller article images */
+        height: 100px; /* Maintain aspect ratio */
+    }
+
+    .article h2 {
+        font-size: 18px; /* Smaller article title */
+    }
+
+    .article p {
+        font-size: 12px; /* Smaller article paragraph */
+    }
+
+    .rightside h3 {
+        font-size: 15px; /* Smaller section headings */
+    }
+
+    .rightside a p {
+        font-size: 15px; /* Smaller link text */
+    }
+
+    .more button {
+        font-size: 10px; /* Smaller button text */
+    }
+
+    .modalcontent {
+        width: 70%;
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 490px) {
+    
+
+    /* Container */
+    .container {
+        flex-direction: column; /* Stack sections on top of each other */
+        padding: 10px;
+    }
+
+    /* Leftside navigation */
+    .leftside {
+        width: 100%; /* Take full width on small screens */
+        border-right: none;
+        border-bottom: 1.5px solid rgba(128, 128, 128, 0.262);
+        padding: 10px 0;
+    }
+
+    .leftside nav ul li {
+        padding: 5px;
+        font-size: 10px; /* Smaller font */
+    }
+
+    /* Main content */
+    .maincontent {
+        width: 100%; /* Full width */
+        padding: 0; /* Remove padding */
+    }
+
+    .article {
+        flex-direction: column; /* Stack image and content */
+        padding: 10px;
+    }
+
+    .article-image {
+        width: 100%;
+        height: auto; /* Make images responsive */
+    }
+
+    .articlecontent {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Rightside  */
+    .rightside {
+        width: 100%; /* Full width */
+        margin-top: 20px;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1.5px solid rgba(128, 128, 128, 0.262);
+    }
+
+    .rightside h3 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .rightside li, span, p {
+        font-size: 14px;
+    }
+
+    .rightside ul, .whotofollow, .tags, .more {
+        margin-top: 10px;
+    }
+
+    .rightside a p {
+        font-size: 13.5px;
+    }
+
+    .more button {
+        font-size: 10px;
+    }
+
+
+    /* Adjust modals for small screens */
+
+    .modalcontent {
+        width: 70%; /* Smaller modal */
+        margin-top: 45%;
+    }
+
+    .modalcontent h3 {
+        margin-top: 3px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheArticle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="headerleft">
+            <img src="images/logo.png" alt="TheArticle">
+            <input type="text" class="searchbar" placeholder="Search">
+        </div>
+        <div class="profile">
+            <i class="fa fa-user-circle profile-icon"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Left-->
+        <aside class="leftside">
+            <nav>
+                <ul>
+                    <li onclick="openArticle('main.html')">Campus News</li>
+                    <li>Events</li>
+                    <li>Academics</li>
+                    <li>Sports</li>
+                    <li>Research</li>
+                    <li>Student Life</li>
+                    <li>Community Engagement</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!--Main-->
+        <main class="maincontent">
+
+            <section class="article">
+                <img src="images/athletics.JPG" alt="Athletics" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('blood.html')">What Happens When You Combine Speed, Strength, and Strategy?</h2>
+                    <p>Track and field often goes unnoticed, and uncelebrated. But what drives someone to push beyond their limits, enduring pain and fatigue in silence? What dreams are they chasing, even when unseen by the world?</p>
+                    <div class="article-meta">
+                        <span>Oct 7</span>
+                        <span>238 likes</span>
+                        <span>16 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--Right-->
+        <aside class="rightside">
+            <h3>Featured Events</h3>
+            <ul>
+                <li>Sci-Math Celebration 2024</li>
+                <li>Spoken Word Poetry Competition</li>
+                <li>CebuTech 2024 Teacher's Day Celebration</li>
+            </ul>
+            <a href=""><p>See the full list</p></a>
+
+            <h3>Popular Department</h3>
+            <div class="tags">
+                <span>Engineering</span>
+                <span>Technology</span>
+                <span>Education, Arts and Sciences</span>
+                <span>Management and Entrepreneurship</span>
+            </div>
+
+            <h3>Who to Follow</h3>
+            <div class="whotofollow">
+                <p>Engr. Jayson Garces Bayogo</p>
+                <p>Engr. Donald Regner Lalican</p>
+                <p>Engr. Chona R. Dagatan</p>
+            </div>
+            <a href=""><p>See the full list</p></a>
+
+            <div class="more">
+                <button class="open-modal" data-modal="aboutModal">About</button>
+                <button class="open-modal" data-modal="creditsModal">Credits</button>
+                <button class="open-modal" data-modal="helpModal">Help</button>
+                <button class="open-modal" data-modal="termsModal">Privacy Terms</button>
+            </div>
+
+            <div id="aboutModal" class="modal">
+                <div class="modalcontent">
+                    <h3>ABOUT</h3>
+                    <p>Welcome to TheArticle!</p>
+                    <p>This site is dedicated to sharing news and events from CebuTech Danao.</p>
+                    <p>&copy; Pia Flor Monteron</p>
+                </div>
+            </div>
+
+            <div id="creditsModal" class="modal">
+                <div class="modalcontent">
+                    <h3>CREDITS</h3>
+                    <p>Articles and Photos from <a href="https://www.facebook.com/ctudanaoofficial?mibextid=LQQJ4d">CTU - Danao Campus</a> facebook page.</p>
+                </div>
+            </div>
+
+            <div id="helpModal" class="modal">
+                <div class="modalcontent">
+                    <h3>HELP</h3>
+                    <p>For assistance, please contact us at</p>
+                </div>
+            </div>
+
+        </aside>
+
+
+    </div>
+    
+
+<script src="main.js"></script>    
+</body>
+</html>
